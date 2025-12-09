@@ -1,0 +1,30 @@
+# GPClaimBlocks v2.0
+# by IdhooRZ
+
+# Bonus blocks default
+default-bonus-blocks: 400
+
+# Accumulative mode
+# true  = semua rank yang dimiliki dijumlahkan
+# false = hanya rank tertinggi yang dipakai
+accumulative: false
+
+# (urutan: tertinggi di atas)
+ranks:
+  "group.warrior": 150000
+  "group.diamond": 100000
+  "group.platinum": 80000
+  "group.mvip": 65000
+  "group.mvp+": 50000
+  "group.mvp": 35000
+  "group.vip+": 25000
+  "group.vip": 15000
+
+# Dont Touch
+debug: false
+
+messages:
+  reload-success: "&aPlugin reloaded!"
+  no-permission: "&cYou don't have a permission."
+  player-not-found: "&cPlayer not found."
+  check-result: "&ePlayer &d%player% &ehave &a%blocks% &ebonus claim blocks (Rank: &b%rank%&e)"

@@ -1,0 +1,20 @@
+name: GPClaimBlocks
+version: 2.0
+main: dev.idhoorz.gpclaimblocks.GPClaimBlocks
+author: IdhooRZ
+description: Automatically assign bonus claim blocks based on LuckPerms groups
+api-version: "1.21"
+depend: [GriefPrevention]
+softdepend: [LuckPerms, PlaceholderAPI]
+
+commands:
+  gpclaimblocks:
+    description: GPClaimBlocks admin commands
+    usage: /<command> [reload|check <player>]
+    aliases: [gpcb]
+    permission: gpclaimblocks.admin
+
+permissions:
+  gpclaimblocks.admin:
+    description: Access to GPClaimBlocks admin commands
+    default: op
