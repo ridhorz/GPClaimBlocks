@@ -73,7 +73,7 @@ public final class GPClaimBlocks extends JavaPlugin {
     }
 
     public void debug(String msg) {
-        if (getConfig().getBoolean("debug")) getLogger().info("[Debug] " + msg);
+        if (getConfig().getBoolean("debug")) getLogger().info("[DEBUG] " + msg);
     }
 
     public static GPClaimBlocks getInstance() {
