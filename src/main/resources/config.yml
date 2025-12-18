@@ -1,15 +1,16 @@
-# GPClaimBlocks v2.0
-# by IdhooRZ
+# ============================================
+#          GPCLAIMBLOCKS by RidhoRZ
+# ============================================
 
-# Bonus blocks default
 default-bonus-blocks: 400
 
-# Accumulative mode
-# true  = semua rank yang dimiliki dijumlahkan
-# false = hanya rank tertinggi yang dipakai
+# Sum all matching ranks instead of using highest only
 accumulative: false
 
-# (urutan: tertinggi di atas)
+# Check Vault groups directly (useful if permission nodes aren't set)
+use-vault-groups: false
+
+# Ranks - checked top to bottom, highest first
 ranks:
   "group.warrior": 150000
   "group.diamond": 100000
@@ -20,11 +21,10 @@ ranks:
   "group.vip+": 25000
   "group.vip": 15000
 
-# Dont Touch
 debug: false
 
 messages:
-  reload-success: "&aPlugin reloaded!"
-  no-permission: "&cYou don't have a permission."
+  reload-success: "&aConfiguration reloaded!"
+  no-permission: "&cYou don't have permission."
   player-not-found: "&cPlayer not found."
-  check-result: "&ePlayer &d%player% &ehave &a%blocks% &ebonus claim blocks (Rank: &b%rank%&e)"
+  check-result: "&ePlayer &b%player% &ehas &a%blocks% &ebonus blocks (Rank: &b%rank%&e)"
