@@ -1,5 +1,5 @@
 name: GPClaimBlocks
-version: 2.1
+version: 2.2
 main: dev.idhoorz.gpclaimblocks.GPClaimBlocks
 author: IdhooRZ
 description: Automatically assign bonus claim blocks based on LuckPerms groups

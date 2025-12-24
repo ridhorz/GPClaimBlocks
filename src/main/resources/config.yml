@@ -11,15 +11,18 @@ accumulative: false
 use-vault-groups: false
 
 # Ranks - checked top to bottom, highest first
+# Supports both formats:
+#   "group.vip": 15000   (full permission)
+#   vip: 15000           (auto-converts to group.vip)
 ranks:
-  "group.warrior": 150000
-  "group.diamond": 100000
-  "group.platinum": 80000
-  "group.mvip": 65000
-  "group.mvp+": 50000
-  "group.mvp": 35000
-  "group.vip+": 25000
-  "group.vip": 15000
+  warrior: 150000
+  diamond: 100000
+  platinum: 80000
+  mvip: 65000
+  mvp+: 50000
+  mvp: 35000
+  vip+: 25000
+  vip: 15000
 
 debug: false
 

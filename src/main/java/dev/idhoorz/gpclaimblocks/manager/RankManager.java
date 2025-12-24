@@ -71,11 +71,17 @@ public final class RankManager {
     }
 
     private boolean hasRank(Player player, String key) {
+        // Check exact permission first
         if (player.hasPermission(key)) return true;
 
+        // Auto-detect: if key doesn't contain dot, try with "group." prefix
+        if (!key.contains(".") && player.hasPermission("group." + key)) return true;
+
+        // Vault fallback
         if (useVaultGroups && plugin.getVaultHook() != null) {
             return plugin.getVaultHook().isInGroup(player, extractName(key));
         }
+
         return false;
     }
 
